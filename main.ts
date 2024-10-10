@@ -1,4 +1,7 @@
+let mySprite: Sprite = null
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    let mySprite: Sprite = null
+    controller.moveSprite(mySprite)
+})
+game.onUpdate(function () {
     controller.moveSprite(mySprite)
 })
