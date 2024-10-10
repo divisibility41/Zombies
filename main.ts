@@ -4,4 +4,5 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 game.onUpdate(function () {
     controller.moveSprite(mySprite)
+    music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
 })
